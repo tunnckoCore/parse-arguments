@@ -25,7 +25,21 @@
     "utils.js"
   ],
   "keywords": [
-    "parse-arguments"
+    "args",
+    "arguments",
+    "fn",
+    "func",
+    "function",
+    "map",
+    "match",
+    "names",
+    "obj",
+    "object",
+    "order",
+    "parse",
+    "parse-arguments",
+    "val",
+    "values"
   ],
   "verb": {
     "run": true,
