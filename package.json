@@ -1,6 +1,6 @@
 {
   "name": "parse-arguments",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse function to object with same key names as arguments names and values that you pass in same order.",
   "repository": "tunnckoCore/parse-arguments",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
