@@ -9,6 +9,15 @@
 
 var utils = require('./utils')
 
+/**
+ * > Parse function to object with same key names as its arguments names.
+ *
+ * @param  {Array|Arguments} `args`
+ * @param  {Function} `fn`
+ * @return {Object}
+ * @api public
+ */
+
 module.exports = function parseArguments (args, fn) {
   args = utils.arrayify(args)
 

@@ -16,6 +16,16 @@ npm i parse-arguments --save
 const parseArguments = require('parse-arguments')
 ```
 
+### [parseArguments](index.js#L21)
+
+> Parse function to object with same key names as its arguments names.
+
+**Params**
+
+* `args` **{Array|Arguments}**    
+* `fn` **{Function}**    
+* `returns` **{Object}**  
+
 ## Related
 * [bind-arguments](https://www.npmjs.com/package/bind-arguments): Bind context (optional) and multiple arguments to function. | [homepage](https://github.com/tunnckocore/bind-arguments)
 * [bind-context](https://www.npmjs.com/package/bind-context): Bind context to a function and preserves her name. Can be used to change name of a function. The toString also works correctly. | [homepage](https://github.com/tunnckocore/bind-context)
