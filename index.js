@@ -12,6 +12,20 @@ var utils = require('./utils')
 /**
  * > Parse function to object with same key names as its arguments names.
  *
+ * **Example**
+ *
+ * ```js
+ * function fixture (xxx, yyy, zzz) {
+ *   return parseArguments(arguments, fixture)
+ * }
+ * var parsed = fixture(444, {a: 'b'}, 'foo')
+ *
+ * console.log(parsed.xxx) // => 444
+ * console.log(parsed.yyy) // => { a: 'b' }
+ * console.log(parsed.zzz) // => 'foo'
+ * console.log(parsed) // => { xxx: 444, yyy: { a: 'b' }, zzz: 'foo' }
+ * ```
+ *
  * @param  {Array|Arguments} `args`
  * @param  {Function} `fn`
  * @return {Object}

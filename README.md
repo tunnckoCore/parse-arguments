@@ -16,8 +16,7 @@ npm i parse-arguments --save
 const parseArguments = require('parse-arguments')
 ```
 
-### [parseArguments](index.js#L21)
-
+### [parseArguments](index.js#L35)
 > Parse function to object with same key names as its arguments names.
 
 **Params**
@@ -25,6 +24,20 @@ const parseArguments = require('parse-arguments')
 * `args` **{Array|Arguments}**    
 * `fn` **{Function}**    
 * `returns` **{Object}**  
+
+**Example**
+
+```js
+function fixture (xxx, yyy, zzz) {
+  return parseArguments(arguments, fixture)
+}
+var parsed = fixture(444, {a: 'b'}, 'foo')
+
+console.log(parsed.xxx) // => 444
+console.log(parsed.yyy) // => { a: 'b' }
+console.log(parsed.zzz) // => 'foo'
+console.log(parsed) // => { xxx: 444, yyy: { a: 'b' }, zzz: 'foo' }
+```
 
 ## Related
 * [bind-arguments](https://www.npmjs.com/package/bind-arguments): Bind context (optional) and multiple arguments to function. | [homepage](https://github.com/tunnckocore/bind-arguments)
